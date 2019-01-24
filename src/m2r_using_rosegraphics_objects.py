@@ -47,18 +47,19 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #                rectangle and RoseWindow
 #
 #          -- Write the names of three METHODs that Circle objects have:
-#                Attach, fill color, outline
+#                outline(), move_center_to(), detach_from()
 #
 #          -- Write the names of three INSTANCE VARIABLEs that Circle
 #             objects have:
-#                WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#                fill_color, outline_color, outline_thickness
 #
 #     f. What does a RoseWindow RENDER method do?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            It draws all of the objects attached to the window.
 #
 #     g. When is a RoseWindow close_on_mouse_click method call
 #        necessary?  Why?
-#            WRITE_YOUR_ANSWER_HERE,_REPLACING_THIS
+#            It's necessary when there are multiple windows because the computer
+#            knows when to exit one window and go to the next window.
 #
 #   ASK QUESTIONS ** NOW ** if you do not understand how the
 #     RoseGraphics graphics system works.
