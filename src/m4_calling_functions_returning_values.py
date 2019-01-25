@@ -153,9 +153,25 @@ def run_test_digits_in_cube():
     print('Testing the   digits_in_cube   function:')
     print('-----------------------------------------------------')
 
-    #Test 1:
-    
+    # Test 1:
+    expected = 10
+    answer = digits_in_cube(4)
+    print('Test 1 expected:', expected)
+    print('       actual:   ', answer)
 
+    # Test 2:
+    expected = 18
+    answer = digits_in_cube(12)
+    print('Test 1 expected:', expected)
+    print('        actual: ', answer)
+
+    # Test  3:
+    expected = 343
+    answer = digits_in_cube(7)
+    print('Test 1 expected:', expected)
+    print('        actual: ', answer)
+
+    
 def digits_in_cube(n):
     """
     What comes in:  A positive integer.
