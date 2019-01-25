@@ -173,6 +173,9 @@ def run_test_digits_in_cube():
 
 
 def digits_in_cube(n):
+    number = n**3
+    return digits_in_cube(number)
+
     """
     What comes in:  A positive integer.
     What goes out:  The sum of the digits in the CUBE of the integer.
@@ -182,7 +185,7 @@ def digits_in_cube(n):
       this function returns (1 + 2 + 5), which is 8.
     """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #   Note that you should write its TEST function first (above).
     #   That is called TEST-DRIVEN DEVELOPMENT (TDD).
     #
@@ -191,7 +194,7 @@ def digits_in_cube(n):
     #    the    sum_of_digits    function that is DEFINED ABOVE.
     ###########################################################################
     # -------------------------------------------------------------------------
-
+    n =
 
 def run_test_digits_in_power():
     """ Tests the   digits_in_power   function. """
@@ -206,6 +209,7 @@ def run_test_digits_in_power():
     print('--------------------------------------------------')
     print('Testing the   digits_in_power   function:')
     print('--------------------------------------------------')
+
 
 
 def digits_in_power(n, k):
