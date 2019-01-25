@@ -267,6 +267,24 @@ def run_test_fancy_sums_of_digits():
     print('Testing the   fancy_sums_of_digits   function:')
     print('--------------------------------------------------')
 
+    # Test 1:
+    expected = 1
+    answer = fancy_sums_of_digits(10)
+    print('Test 1 expected:', expected)
+    print('       actual: ', answer)
+
+    # Test 2:
+    expected = 19084
+    answer = fancy_sums_of_digits(2)
+    print('Test 1 expected:', expected)
+    print('       actual: ', answer)
+
+    # Test 3:
+    expected = 124309
+    answer = fancy_sums_of_digits(35)
+    print('Test 1 expected:', expected)
+    print('       actual: ', answer)
+
     # -------------------------------------------------------------------------
     # HINT:  For your 1st test, consider  n=10.  Figure out BY HAND
     # the correct (expected) answer for that test case.  (It's easy.)
@@ -277,6 +295,10 @@ def run_test_fancy_sums_of_digits():
 
 
 def fancy_sums_of_digits(n):
+    x = sum_of_digits(n**1000)
+    y = sum_of_digits(n**999)
+    number = (x**y)
+    return sum_of_digits(number)
     """
     What comes in:  A positive integer n.
     What goes out:
@@ -301,7 +323,7 @@ def fancy_sums_of_digits(n):
             -- so this function returns 124309.
     """
     # -------------------------------------------------------------------------
-    # TODO: 8. Implement and test this function.
+    # DONE: 8. Implement and test this function.
     #
     ###########################################################################
     # IMPORTANT: CALL, as many times as needed,
@@ -313,5 +335,7 @@ def fancy_sums_of_digits(n):
 # Calls  main  to start the ball rolling.
 # This unusual form is necessary for the special testing we provided.
 # -----------------------------------------------------------------------------
+
+
 if __name__ == '__main__':
     main()
