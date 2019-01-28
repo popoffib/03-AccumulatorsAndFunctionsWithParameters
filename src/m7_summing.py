@@ -5,8 +5,9 @@ in its simplest classic forms:
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
          Aaron Wilkin, their colleagues, and Isabella Popoff.
-"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE. 
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
+import math
 
 def main():
     """ Calls the   TEST   functions in this module. """
@@ -29,6 +30,23 @@ def run_test_sum_cosines():
     print('Testing the   sum_cosines   function:')
     print('--------------------------------------------------')
 
+    # Test 1:
+    expected = 1
+    answer = sum_cosines(1)
+    print('Test 1 expected:', expected)
+    print('       actual: ', answer)
+
+    # Test 2:
+    expected =
+    answer = sum_cosines()
+    print('Test 2 expected: ', expected)
+    print('       actual: ', answer)
+
+    # Test 3:
+    expected =
+    answer = sum_cosines()
+    print('Test 3 expected: ', expected)
+    print('       actual: ', answer)
 
 def sum_cosines(n):
     """
