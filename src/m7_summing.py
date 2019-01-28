@@ -18,7 +18,7 @@ def main():
 def run_test_sum_cosines():
     """ Tests the   sum_cosines   function. """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement this function.
+    # DONE: 2. Implement this function.
     #   It TESTS the  sum_cosines  function defined below.
     #   Include at least **   3   ** tests.
     #
@@ -31,24 +31,30 @@ def run_test_sum_cosines():
     print('--------------------------------------------------')
 
     # Test 1:
-    expected = 1
-    answer = sum_cosines(1)
+    expected = 0.13416
+    answer = sum_cosines(3)
     print('Test 1 expected:', expected)
     print('       actual: ', answer)
 
     # Test 2:
-    expected =
-    answer = sum_cosines()
+    expected = -0.23582
+    answer = sum_cosines(5)
     print('Test 2 expected: ', expected)
     print('       actual: ', answer)
 
     # Test 3:
-    expected =
-    answer = sum_cosines()
+    expected = 1.12416
+    answer = sum_cosines(2)
     print('Test 3 expected: ', expected)
     print('       actual: ', answer)
 
+
 def sum_cosines(n):
+    total = 0
+    for k in range(n+1):
+        total = total + (math.cos(k))
+    return total
+
     """
     What comes in:  A non-negative integer n.
     What goes out:  The sum of the cosines of the integers
