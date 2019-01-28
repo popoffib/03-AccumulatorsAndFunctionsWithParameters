@@ -54,7 +54,7 @@ def draw_circles1():
         circle = rg.Circle(center, radius)
         circle.attach_to(window)
         window.render()
-    window.close_on_mouse_click()
+    window.close_on_mouse_click() 
 
     """
     -- Constructs an rg.RoseWindow whose width and height are both 400.
