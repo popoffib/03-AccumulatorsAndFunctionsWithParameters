@@ -49,7 +49,6 @@ def draw_circles1():
     center = rg.Point(200, 200)
 
     for k in range(21):
-        total = 0
         total = 10*k
         radius = total
         circle = rg.Circle(center, radius)
