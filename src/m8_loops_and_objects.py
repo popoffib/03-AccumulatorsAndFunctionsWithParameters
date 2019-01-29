@@ -17,6 +17,7 @@ def main():
     draw_circles1()
     print_sequence2()
     draw_circles2()
+    print_sequence3()
     """ Calls the other functions to demonstrate and/or test them. """
     # Test your functions by putting calls to them here:
 
@@ -134,6 +135,8 @@ def draw_circles2():
 
 
 def print_sequence3():
+    for k in range(100):
+        print(k+1)
     """
     Prints:
       1
@@ -144,7 +147,7 @@ def print_sequence3():
       100.
     """
     # -------------------------------------------------------------------------
-    # TODO: 6. Implement this function, per its doc-string above.
+    # DONE: 6. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     # -------------------------------------------------------------------------
