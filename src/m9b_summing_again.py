@@ -17,7 +17,7 @@ def main():
 def run_test_sum_powers():
     """ Tests the   sum_powers   function. """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement this function.
+    # DONE: 2. Implement this function.
     #   It TESTS the  sum_powers  function defined below.
     #   Include at least **   3   ** tests.
     #
@@ -29,8 +29,30 @@ def run_test_sum_powers():
     print('Testing the   sum_powers   function:')
     print('--------------------------------------------------')
 
+    # Test 1:
+    expected = 5
+    answer = sum_powers(3, 5)
+    print('Test 1 expected:', expected)
+    print('       actual', answer)
+
+    # Test 2:
+    expected = 5
+    answer = sum_powers(2, 7)
+    print('Test 2 expected:', expected)
+    print('       actual:', answer)
+
+    # Test 3:
+    expected = 5
+    answer = sum_powers()
+    print('Test 3 expected:', expected)
+    print('       actual:', answer)
+
 
 def sum_powers(n, p):
+    for k in range(n+1):
+        total = total + n**p
+    return total
+
     """
     What comes in:  A non-negative integer n
                     and a number p.
