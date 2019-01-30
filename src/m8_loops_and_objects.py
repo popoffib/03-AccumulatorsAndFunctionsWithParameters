@@ -231,7 +231,7 @@ def print_cosines():
 
 def draw_cosines_and_sines():
     window = rg.RoseWindow(400, 400)
-    for k in range(0,101):
+    for k in range(0, 101):
         center = rg.Point((200 + (math.cos(k)*80)), (200 + (math.sin(k)*80)))
         circle = rg.Circle(center, 10)
         circle.attach_to(window)
